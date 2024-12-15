@@ -53,9 +53,6 @@ function heuristicValue(node) {
     return Math.abs(node.x - target.x) + Math.abs(node.y - target.y);
 }
 
-// ==========================================================
-// ==================== ANIMATION ⚙️🦾 =====================
-// ==========================================================
 let timeoutIds = [];
 function clearPreviousTimeouts() {
     for (let id of timeoutIds) {

@@ -1,7 +1,4 @@
-// ==========================================================
-// =================== Rendering Grid 📅📏 =================
-// ==========================================================
-
+// Rendering Grid
 const board = document.querySelector('#board');
 let matrix;
 let row;
@@ -53,14 +50,7 @@ function renderBoard() {
     boardInteraction(cells);
 }
 
-
-
-
-
-// ==========================================================
-// ================= BOARD INTERATION 🎨🖌️ =================
-// ==========================================================
-
+// BOARD INTERATION
 function boardInteraction(cells) {
     let draging = false;
     let drawing = false;

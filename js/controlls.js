@@ -1,6 +1,3 @@
-// ==========================================================
-// ===================== TUTORIAL 📖📽️ =====================
-// ==========================================================
 let count = 0;
 const slides = document.querySelectorAll('.tutorial .slide');
 const prevBtn = document.querySelector('#prev');
@@ -110,13 +107,6 @@ window.addEventListener('keydown', (e) => {
 })
 
 
-
-
-
-// ==========================================================
-// ====================== CLICK EVENTS ======================
-// ==========================================================
-
 const clearNavOption = () => {
     navOptions.forEach((option) => {
         option.classList.remove('active');
@@ -129,7 +119,7 @@ const clearDropMenu = () => {
     })
 }
 
-//NAVIGATION click 🔵👆
+//NAVIGATION click 
 const navOptions = document.querySelectorAll('.nav-menu>li>a');
 navOptions.forEach((option) => {
     option.addEventListener('click', () => {
@@ -153,7 +143,7 @@ navOptions.forEach((option) => {
     })
 })
 
-//OUTSIZE CLICK 🚀👆
+//OUTSIZE CLICK 
 document.addEventListener('click', (event) => {
     if (!document.querySelector('.nav-menu').contains(event.target)) {
         clearNavOption();
@@ -161,7 +151,7 @@ document.addEventListener('click', (event) => {
     }
 })
 
-//'dropMenu' OPTION CLICK 📃👆
+//'dropMenu' OPTION CLICK 
 const dropMenus = document.querySelectorAll('.drop-menu');
 const dropOptions = document.querySelectorAll('.drop-menu a');
 
@@ -191,8 +181,6 @@ dropOptions.forEach((option) => {
 })
 
 
-//========== GUIDE TOGGLE ⏬⏬
-
 const guide = document.querySelector('.guide');
 const guideToggle = document.querySelector('.guide-toggle');
 guideToggle.addEventListener('click', () => {
@@ -205,14 +193,7 @@ document.addEventListener('click', (e) => {
 
 })
 
-
-
-
-
-// ==========================================================
-// ============== BUTTONS INTERATION 🟡👆 ==================
-// ==========================================================
-
+// BUTTONS INTERATION 
 const clearPathBtn = document.querySelector('#clear-path');
 const clearBoardBtn = document.querySelector('#clear-board');
 const speedOptions = document.querySelectorAll('#speed .drop-menu a');

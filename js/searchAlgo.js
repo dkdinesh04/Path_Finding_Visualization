@@ -23,12 +23,7 @@ visualizeBtn.addEventListener('click', () => {
 });
 
 
-
-
-
-// ==========================================================
-// ======================= BFS ⚙️🦾 ========================
-// ==========================================================
+// BFS 
 function BFS() {
     const queue = [];
     const visited = new Set();
@@ -48,10 +43,8 @@ function BFS() {
         const neighbours = getNeighbours(current);
 
         for (const neighbour of neighbours) {
-            //shoulbe be valid
-            //shouldn't be wall
-            //shouldn't be visited
-            const key = `${neighbour.x}-${neighbour.y}`;
+           
+                const key = `${neighbour.x}-${neighbour.y}`;
             if (
                 isValid(neighbour.x, neighbour.y) &&
                 !matrix[neighbour.x][neighbour.y].classList.contains('wall') &&
@@ -67,13 +60,7 @@ function BFS() {
 }
 
 
-
-
-
-// ==========================================================
-// ===================== Dijkstra ⚙️🦾 =====================
-// ==========================================================
-
+// Dijkstra 
 function Dijkstra() {
     const pq = new PriorityQueue();
     const parent = new Map();
@@ -122,14 +109,7 @@ function Dijkstra() {
     }
 }
 
-
-
-
-
-// ==========================================================
-// ======================= Astar ⚙️🦾 ======================
-// ==========================================================
-
+// Astar 
 function Astar() {
     const queue = new PriorityQueue();;
     const visited = new Set();//closedset
@@ -191,12 +171,7 @@ function Astar() {
 }
 
 
-
-
-
-// ==========================================================
-// ====================== Greedy ⚙️🦾 ======================
-// ==========================================================
+// Greedy
 
 function greedy() {
     const queue = new PriorityQueue();
@@ -239,12 +214,7 @@ function greedy() {
 }
 
 
-
-
-
-// ==========================================================
-// ======================== DFS ⚙️🦾 =======================
-// ==========================================================
+//  DFS 
 const visited = new Set();
 function DFS(current) {
     //base case
@@ -274,12 +244,7 @@ function DFS(current) {
 
 
 
-
-
-// ==========================================================
-// ================== B-iDirectional ⚙️🦾 ==================
-// ==========================================================
-
+// B-iDirectional 
 
 function biDirectional() {
     const queue1 = [];
